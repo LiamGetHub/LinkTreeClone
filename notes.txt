@@ -1,0 +1,9 @@
+Relevant project commands:
+    - "rails s"  starts rails server
+    - "ctrl" + "c" to stop server
+
+Commands to remeber in rails:
+    - "rails g controller name_of_controller index"
+
+
+MVC- Model View Controler:
