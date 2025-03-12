@@ -9,7 +9,7 @@ Commands to remeber in rails:
     - "rails db:migrate"
         - migrates changes to db.
     - "bundle install" installs all the gems in the gem file. basically updates gem file.
-    
+
 
 
 Rails elements:
@@ -17,6 +17,34 @@ Rails elements:
 
 Other:
     - Using gem "devise" for user authentification.
-
+    - put partails in app/view/layouts. their name should start with an underscore
+    -
 
 MVC- Model View Controler:
+
+
+etra:
+
+<%= stylesheet_link_tag "navbar", media: "all" %>
+
+<nav class="navbar">
+    <div class="navbar-brand">
+        <%= link_to root_path do %>
+            <%= image_tag("logo.png", alt: "Logo", class: "navbar-logo") %>
+        <% end %>
+    </div>
+
+    <div class="navbar-links">
+        <% if user_signed_in? %>
+            <div class="navbar-user">
+                <%= link_to "My Account", edit_user_registration_path, class: "nav-link" %>
+                <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link logout" %>
+            </div>
+        <% else %>
+            <div class="navbar-auth">
+                <%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %>
+                <%= link_to "Log In", new_user_session_path, class: "nav-link" %>
+            </div>
+        <% end %>
+    </div>
+</nav>
