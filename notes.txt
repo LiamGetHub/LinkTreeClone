@@ -4,6 +4,19 @@ Relevant project commands:
 
 Commands to remeber in rails:
     - "rails g controller name_of_controller index"
+    - "rails g scaffold name_of_scaffold" + "attribute_name:attribute_type"
+            -basically creates a table schema.
+    - "rails db:migrate"
+        - migrates changes to db.
+    - "bundle install" installs all the gems in the gem file. basically updates gem file.
+    
+
+
+Rails elements:
+    - scaffolding: you can create an entire CRUD functionality with one command.
+
+Other:
+    - Using gem "devise" for user authentification.
 
 
 MVC- Model View Controler:
